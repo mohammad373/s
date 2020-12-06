@@ -8,8 +8,8 @@ from colorama import Fore
 def __name__():
     os.system("clear")
     try:
-        print(Fore.BLUE + "Hello . Welcome Back" + Fore.YELLOW + " ;)")
-        time.sleep(2)
+        #print(Fore.BLUE + "Hello . Welcome Back" + Fore.YELLOW + " ;)")
+        # m
         target = input(Fore.RED + "\nEnter Your Address Target" + For.YELLOW + " ==>  ")
         time.sleep(1.3)
         
