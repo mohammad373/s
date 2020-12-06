@@ -4,13 +4,13 @@ import time
 import sys
 import requests
 from colorama import Fore
-
+os.system("clear")
 def __name__():
-    os.system("clear")
+
     try:
         #print(Fore.BLUE + "Hello . Welcome Back" + Fore.YELLOW + " ;)")
         # m
-        target = input(Fore.RED + "\nEnter Your Address Target" + For.YELLOW + " ==>  ")
+        target = input(Fore.RED + "Enter Your Address Target" + For.YELLOW + " ==>  ")
         time.sleep(1.3)
         
         if target == "" or None :
