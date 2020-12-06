@@ -6,6 +6,7 @@ import requests
 from colorama import Fore
 
 def __name__():
+    os.system("clear")
     try:
         print(Fore.BLUE + "Hello . Welcome Back" + Fore.YELLOW + " ;)")
         time.sleep(2)
@@ -21,9 +22,9 @@ def __name__():
                 pass
         r = requests.get("http://" + target + "/wp-content/plugins/")
         if r.status_code == 404 or r.status_code == 500:
-            print(Fore.RED + f"Your Target Is Not WordPress : {target} " + Fore.YELLOW + " ;( ")
+            print(Fore.RED + "Your Target Is Not WordPress" + Fore.YELLOW + " ;( ")
         else:
-            print(Fore.GREEN + f"Your Target Is WordPresss : {target} " Fore.YELLOW + " ;) ")
+            print(Fore.GREEN + "Your Target Is WordPresss" Fore.YELLOW + " ;) ")
     except:
         try:
             print(Fore.BLUE + "\nThank You ;)")
