@@ -4,10 +4,10 @@ import time
 import sys
 import requests
 from colorama import Fore
-os.system("clear")
+# os.system("clear")
 def __name__():
 
-    try:
+
         #print(Fore.BLUE + "Hello . Welcome Back" + Fore.YELLOW + " ;)")
         # m
         target = input(Fore.RED + "Enter Your Address Target" + For.YELLOW + " ==>  ")
@@ -25,9 +25,5 @@ def __name__():
             print(Fore.RED + "Your Target Is Not WordPress" + Fore.YELLOW + " ;( ")
         else:
             print(Fore.GREEN + "Your Target Is WordPresss" + Fore.YELLOW + " ;) ")
-    except:
-        try:
-            print(Fore.BLUE + "\nThank You ;)")
-        except:
-            pass
+
 __name__()
