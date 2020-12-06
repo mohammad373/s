@@ -24,7 +24,7 @@ def __name__():
         if r.status_code == 404 or r.status_code == 500:
             print(Fore.RED + "Your Target Is Not WordPress" + Fore.YELLOW + " ;( ")
         else:
-            print(Fore.GREEN + "Your Target Is WordPresss" Fore.YELLOW + " ;) ")
+            print(Fore.GREEN + "Your Target Is WordPresss" + Fore.YELLOW + " ;) ")
     except:
         try:
             print(Fore.BLUE + "\nThank You ;)")
