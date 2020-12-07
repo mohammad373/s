@@ -1045,7 +1045,7 @@ aweber-web-form-widget
             except:
                 pass
         for plus in my_list:
-            time.sleep(0.1)
+                time.sleep(0.1)
                 q = requests.get('http://'+target+'/wp-content/plugins/'+plus)
                 if q.status_code == 200 :
                         print(Fore.BLUE + "[+] " + Fore.GREEN + q + Fore.YELLOW + " > " + Fore.GREEN + "Found ;) ")
