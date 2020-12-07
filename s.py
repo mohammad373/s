@@ -1041,7 +1041,7 @@ aweber-web-form-widget
                 time.sleep(2)
                 print(Fore.GREEN + "\n[!] This Is Test 1000 Plugins ...  ")
                 time.sleep(1.2)
-       for plus in my_list:
+        for plus in my_list:
                 time.sleep(0.1)
                 q = requests.get('http://'+target+'/wp-content/plugins/'+plus)
                 if q.status_code == 200 :
