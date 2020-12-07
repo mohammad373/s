@@ -8,8 +8,8 @@ from colorama import Fore
 
 
 def __name__():
-    os.system("clear")
-    my_list = ("""wordpress-importer
+        os.system("clear")
+        my_list = ("""wordpress-importer
 regenerate-thumbnails
 wp-super-cache
 jetpack
