@@ -1040,22 +1040,18 @@ aweber-web-form-widget
                 time.sleep(0.7)
                 print(Fore.GREEN + "[!] Pleass 5 Sec Latter ...  " )
                 time.sleep(2)
-                print(Fore.GREEN + "\nThis Is Test 1000 Plugins ...  ")
+                print(Fore.GREEN + "\n[!] This Is Test 1000 Plugins ...  ")
                 time.sleep(1.2)
             except:
                 pass
         for i in my_list:
-            try:
-                q = requests.get("http://" + target + "wp-content/plugins/" + i)
+            time.sleep(0.1)
+                q = requests.get("http://" + target + "/wp-content/plugins/" + i)
                 if q.status_code == 200 :
-                    try:
                         print(Fore.BLUE + "[+] " + Fore.GREEN + q + Fore.YELLOW + " > " + Fore.GREEN + "Found ;) ")
-                    except:
-                        pass
                 else:
                     print(Fore.BLUE + "[-] " + Fore.RED + q + Fore.YELLOW + " > " + Fore.RED + "Not Found ;(")
-            except:
-                pass
+
     except:
         pass
 __name__()
