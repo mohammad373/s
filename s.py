@@ -1047,7 +1047,7 @@ aweber-web-form-widget
                 if q.status_code == 200 :
                     print(Fore.BLUE + "[+] " + Fore.GREEN + q + Fore.YELLOW + " > " + Fore.GREEN + "Found ;) ")
                 else:
-                    print(Fore.BLUE + "[-] " + Fore.RED + q + Fore.YELLOW + " > " + Fore.RED + "Not Found ;) )
+                    print(Fore.BLUE + "[-] " + Fore.RED + q + Fore.YELLOW + " > " + Fore.RED + "Not Found ;( ")
 
 
 __name__()
