@@ -1045,9 +1045,9 @@ aweber-web-form-widget
                 time.sleep(0.1)
                 q = requests.get('http://'+target+'/wp-content/plugins/'+plus)
                 if q.status_code == 200 :
-                    print("okkkkkk")
+                    print(Fore.BLUE + "[+] " + Fore.GREEN + q + Fore.YELLOW + " > " + Fore.GREEN + "Found ;) ")
                 else:
-                    print("noooo")
+                    print(Fore.BLUE + "[-] " + Fore.RED + q + Fore.YELLOW + " > " + Fore.RED + "Not Found ;) )
 
 
 __name__()
