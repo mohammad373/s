@@ -1010,7 +1010,6 @@ animate-it
 simple-wp-sitemap
 aweber-web-form-widget
 """).split("\n")
-    try:
         print(Fore.GREEN + "Hello . Welcome Back" + Fore.RED + " ;) ")
         time.sleep(3)
         target = input(Fore.YELLOW + "\nEnter Your Address Target" + Fore.BLUE + " ==>  ")
@@ -1033,7 +1032,7 @@ aweber-web-form-widget
             except:
                 pass
         else:
-            try:
+
                 print(Fore.GREEN + "[!] Cheking Your Target ...")
                 time.sleep(2)
                 print(Fore.GREEN + "\n[+] Your Target Is WordPress" + Fore.YELLOW + " ;) ")
@@ -1042,16 +1041,13 @@ aweber-web-form-widget
                 time.sleep(2)
                 print(Fore.GREEN + "\n[!] This Is Test 1000 Plugins ...  ")
                 time.sleep(1.2)
-            except:
-                pass
-        for plus in my_list:
+       for plus in my_list:
                 time.sleep(0.1)
                 q = requests.get('http://'+target+'/wp-content/plugins/'+plus)
                 if q.status_code == 200 :
-                        print(Fore.BLUE + "[+] " + Fore.GREEN + q + Fore.YELLOW + " > " + Fore.GREEN + "Found ;) ")
+                    print("okkkkkk")
                 else:
-                    print(Fore.BLUE + "[-] " + Fore.RED + q + Fore.YELLOW + " > " + Fore.RED + "Not Found ;(")
+                    print("noooo")
 
-    except:
-        pass
+
 __name__()
