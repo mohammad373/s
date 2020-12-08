@@ -33,7 +33,7 @@ def __target__():
                     print(Fore.YELLOW + "\n[+] - Ok Good Bay ;)")
             except:
                 pass
-        s = socket.gethostbyname(target))
+        s = socket.gethostbyname(target)
         #r = requests.get("https://who.is/whois-ip/ip-address/"+ s).text
         r = "https://who.is/whois-ip/ip-address/" + s
         print(r)
