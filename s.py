@@ -8,7 +8,7 @@ from colorama import Fore
 os.system("clear")
 def __target__():
         os.system("clear")
-        time.sleep(Fore.RED + "Helloe . Welcome Back ;)")
+        print(Fore.RED + "Helloe . Welcome Back ;)")
         time.sleep(2)
         target = input(Fore.BLUE + "\nEnter Your Address Target" + Fore.YELLOW + " ==>  ")
         time.sleep(2)
