@@ -34,7 +34,8 @@ def __target__():
             except:
                 pass
         s = socket.gethostbyname(str(target))
-        r = requests.get("https://who.is/whois-ip/ip-address/"+ s).text
+        #r = requests.get("https://who.is/whois-ip/ip-address/"+ s).text
+        r = "https://who.is/whois-ip/ip-address/" + s
         print(r)
     except:
         pass
