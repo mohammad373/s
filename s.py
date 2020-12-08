@@ -4,6 +4,7 @@ import requests
 import time
 import socket
 from colorama import Fore
+import webbrowser as web
 
 os.system("clear")
 def __target__():
@@ -34,8 +35,8 @@ def __target__():
             except:
                 pass
         s = socket.gethostbyname(target)
-        r = requests.get("https://who.is/whois-ip/ip-address/"+ s).text
-        # r = "https://who.is/whois-ip/ip-address/" + s
-        print(r)
+        #r = requests.get("https://who.is/whois-ip/ip-address/"+ s).text
+        # r = "/" + s
+        web.open("https://who.is/whois-ip/ip-address" + s)
 
 __target__()
