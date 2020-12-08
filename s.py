@@ -7,7 +7,7 @@ from colorama import Fore
 
 os.system("clear")
 def __target__():
-    try:
+        os.system("clear")
         time.sleep(Fore.RED + "Helloe . Welcome Back ;)")
         time.sleep(2)
         target = input(Fore.BLUE + "\nEnter Your Address Target" + Fore.YELLOW + " ==>  ")
@@ -33,10 +33,9 @@ def __target__():
                     print(Fore.YELLOW + "\n[+] - Ok Good Bay ;)")
             except:
                 pass
-        s = socket.gethostbyname(str(target))
+        s = socket.gethostbyname(target))
         #r = requests.get("https://who.is/whois-ip/ip-address/"+ s).text
         r = "https://who.is/whois-ip/ip-address/" + s
         print(r)
-    except:
-        pass
+
 __target__()
