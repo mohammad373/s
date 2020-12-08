@@ -19,7 +19,7 @@ def __target__():
                 print(Fore.RED + "\n[*] - Ok Good Lunch ;)")
                 time.sleep(2)
                 # __________
-                clear = int(input(Fore.YELLOW + "\n[!] - Your Sestem Is Clear 1 : Yes  2 : No" ==>  ))
+                clear = int(input(Fore.YELLOW + "\n[!] - Your Sestem Is Clear 1 : Yes  2 : No  ==>  "))
                 if clear == 1:
                     try:
                         print(Fore.YELLOW + "\n[!] - Ok Your System Thas 2 Sec Clear ;)")
